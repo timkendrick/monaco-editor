@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 const MONACO_CORE_PATH = getModulePath('monaco-editor-core/dev');
 
@@ -19,6 +20,9 @@ module.exports = {
     libraryTarget: 'umd',
     library: 'monaco',
   },
+  plugins: [
+    new UglifyJsPlugin()
+  ],
   devtool: 'source-map',
   module: {
     rules: [
