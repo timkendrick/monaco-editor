@@ -53,10 +53,6 @@ module.exports = {
               },
               extensions: [
                 getMonacoCorePath('vs/editor/editor.main.nls'),
-                ...findModulesInPath(getModulePath('monaco-css/release/min')),
-                ...findModulesInPath(getModulePath('monaco-html/release/min')),
-                ...findModulesInPath(getModulePath('monaco-json/release/min')),
-                ...findModulesInPath(getModulePath('monaco-languages/release/src')),
                 ...findModulesInPath(getModulePath('monaco-typescript/release')),
               ],
             },
