@@ -30,7 +30,7 @@
   ],
   "devDependencies": {
     "@timkendrick/eslint-config": "^1.0.0",
-    "@timkendrick/monaco-editor-loader": "0.0.2",
+    "@timkendrick/monaco-editor-loader": "0.0.3",
     "del-cli": "1.1.0",
     "eslint": "^4.0.0",
     "monaco-css": "1.3.3",
