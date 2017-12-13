@@ -41,6 +41,9 @@ module.exports = {
                   path: getMonacoCorePath('vs/base/worker/workerMain.js'),
                   config: {
                     scripts: {
+                      'vs/language/css/cssWorker.js': getModulePath('monaco-css/release/min/cssWorker.js'),
+                      'vs/language/html/htmlWorker.js': getModulePath('monaco-html/release/min/htmlWorker.js'),
+                      'vs/language/json/jsonWorker.js': getModulePath('monaco-json/release/min/jsonWorker.js'),
                       'vs/language/typescript/src/worker.js': getModulePath('monaco-typescript/release/src/worker.js'),
                       'vs/language/typescript/lib/typescriptServices.js': getModulePath('monaco-typescript/release/lib/typescriptServices.js'),
                     },
