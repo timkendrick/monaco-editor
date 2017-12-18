@@ -1,0 +1,39 @@
+[submodule "monaco-html"]
+	path = submodules/monaco-html
+	url = https://github.com/Microsoft/monaco-html.git
+[submodule "monaco-css"]
+	path = submodules/monaco-css
+	url = https://github.com/Microsoft/monaco-css.git
+[submodule "monaco-json"]
+	path = submodules/monaco-json
+	url = https://github.com/Microsoft/monaco-json.git
+[submodule "monaco-languages"]
+	path = submodules/monaco-languages
+	url = https://github.com/Microsoft/monaco-languages.git
+[submodule "monaco-typescript"]
+	path = submodules/monaco-typescript
+	url = https://github.com/Microsoft/monaco-typescript.git
+[submodule "vscode"]
+	path = submodules/vscode
+	url = https://github.com/Microsoft/vscode.git
+[submodule "vscode-css-languageservice"]
+	path = submodules/vscode-css-languageservice
+	url = https://github.com/Microsoft/vscode-css-languageservice.git
+[submodule "vscode-json-languageservice"]
+	path = submodules/vscode-json-languageservice
+	url = https://github.com/Microsoft/vscode-json-languageservice.git
+[submodule "vscode-html-languageservice"]
+	path = submodules/vscode-html-languageservice
+	url = https://github.com/Microsoft/vscode-html-languageservice.git
+[submodule "vscode-languageserver-node"]
+	path = submodules/vscode-languageserver-node
+	url = https://github.com/Microsoft/vscode-languageserver-node.git
+[submodule "vscode-nls"]
+	path = submodules/vscode-nls
+	url = https://github.com/Microsoft/vscode-nls.git
+[submodule "vscode-uri"]
+	path = submodules/vscode-uri
+	url = https://github.com/Microsoft/vscode-uri.git
+[submodule "jsonc-parser"]
+	path = submodules/jsonc-parser
+	url = https://github.com/Microsoft/node-jsonc-parser.git
