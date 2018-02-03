@@ -3,12 +3,15 @@
   "version": "0.0.7",
   "description": "CommonJS/Webpack compatible Monaco editor",
   "main": "dist/standalone/index.js",
+  "typings": "dist/standalone/index.d.ts",
   "scripts": {
-    "build:standalone": "cross-env NODE_ENV=production webpack --config webpack.config.standalone",
-    "build:external": "cross-env NODE_ENV=production webpack --config webpack.config.external",
-    "build": "npm run build:standalone && npm run build:external",
+    "build:standalone": "cross-env NODE_ENV=production webpack --config webpack.config.standalone && npm run typings:standalone",
+    "build:external": "cross-env NODE_ENV=production webpack --config webpack.config.external && npm run typings:external",
+    "typings:standalone": "./scripts/generate-typings dist/standalone/index.d.ts",
+    "typings:external": "./scripts/generate-typings dist/external/index.d.ts",
+    "build": "npm run clean && npm run build:standalone && npm run build:external",
     "clean": "del dist",
-    "prepublish": "npm run clean && npm run build"
+    "prepublish": "npm run build"
   },
   "files": [
     "dist"
@@ -46,6 +49,7 @@
     "lines-and-columns": "1.1.6",
     "loader-utils": "1.1.0",
     "merge-source-map": "1.0.4",
+    "monaco-editor": "0.10.1",
     "progress-bar-webpack-plugin": "1.10.0",
     "source-map": "0.6.1",
     "source-map-support": "0.5.0",
@@ -57,7 +61,7 @@
     "vscode-html-languageservice": "2.0.14",
     "vscode-json-languageservice": "3.0.4",
     "vscode-languageserver-types": "3.5.0",
-    "webpack": "4.0.0-alpha.2",
+    "webpack": "4.0.0-alpha.4",
     "webpack-cli": "2.0.1"
   }
 }
