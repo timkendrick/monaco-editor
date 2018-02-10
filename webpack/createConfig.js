@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const escapeStringRegexp = require('escape-string-regexp');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = function createConfig(paths, { outputPath, inline, library }) {
   return {
@@ -100,6 +101,10 @@ module.exports = function createConfig(paths, { outputPath, inline, library }) {
       // HACK: Required for ts-loader to work correctly within webpack v4
       new webpack.LoaderOptionsPlugin({ options: {} }),
       ...(inline ? [] : [new ExtractTextPlugin(`${library}.css`)]),
+      new UglifyJsPlugin({
+        parallel: true,
+        sourceMap: true,
+      }),
       new ProgressBarPlugin(),
     ],
   };
