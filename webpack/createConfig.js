@@ -6,7 +6,6 @@ const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 
 module.exports = function createConfig(paths, { outputPath, inline, library }) {
   return {
-    mode: (process.env.NODE_ENV === 'production' ? 'production' : 'development'),
     target: 'web',
     devtool: 'source-map',
     output: {
