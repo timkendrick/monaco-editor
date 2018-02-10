@@ -1,6 +1,6 @@
 {
   "name": "@timkendrick/monaco-editor",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "CommonJS/Webpack compatible Monaco editor",
   "main": "dist/standalone/index.js",
   "typings": "dist/standalone/index.d.ts",
