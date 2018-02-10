@@ -106,6 +106,7 @@ To generate custom builds, see the [@timkendrick/monaco-editor-loader](https://w
 
 ```bash
 git clone https://github.com/timkendrick/monaco-editor.git
+cd monaco-editor
 git submodule update --init
 npm install
 
