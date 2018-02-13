@@ -21,7 +21,7 @@
     "url": "git+https://github.com/timkendrick/monaco-editor.git"
   },
   "author": "Tim Kendrick <timkendrick@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/timkendrick/monaco-editor/issues"
   },
